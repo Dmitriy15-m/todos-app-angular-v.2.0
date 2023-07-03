@@ -1,0 +1,51 @@
+.input-container {
+  display: flex;
+  padding: 7px;
+  justify-content: center;
+  margin: 10px 10px 0 10px;
+  border-radius: 15px;
+}
+
+.input-name {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.input-btn {
+  align-self: center;
+  margin-left: 10px;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+  color: white;
+  cursor: pointer;
+  background-color: #64b4f6;
+  height: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+input:disabled {
+  align-self: center;
+  margin-left: 10px;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+  color: white;
+  cursor: pointer;
+  background-color: #64b4f6;
+  height: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  opacity: 0.4;
+}
+
+.span-error {
+  color: red;
+  font-size: 13px;
+  margin-left: 35px;
+  margin-top: 0px;
+}

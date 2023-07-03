@@ -1,0 +1,25 @@
+<form
+  class="input-container"
+  #myForm="ngForm"
+  (ngSubmit)="addTodo(myForm)"
+  novalidate
+>
+  <input
+    class="input-name"
+    placeholder="введите название дела"
+    type="text"
+    name="todoName"
+    [(ngModel)]="title"
+    required
+  />
+  <input
+    [disabled]="myForm.invalid"
+    [ngClass]="{
+      'input-btn': myForm.valid,
+      '.err': myForm.invalid
+    }"
+    type="submit"
+    value="добавить дело"
+  />
+</form>
+

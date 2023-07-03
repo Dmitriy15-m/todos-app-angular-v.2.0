@@ -1,0 +1,39 @@
+.todos-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.todos-checkbox {
+  width: 14px;
+  align-self: center;
+  justify-self: center;
+  cursor: pointer;
+}
+
+.title-todos {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  align-self: center;
+  justify-self: center;
+}
+
+.todos-dellBtn {
+  border: none;
+  border-radius: 5px;
+  height: 20px;
+  align-self: center;
+  background-color: white;
+  cursor: pointer;
+  color: red;
+}
+
+.stroke {
+  text-decoration: line-through;
+}
+
+hr {
+  margin: 0 20px 0 20px;
+}
