@@ -1,7 +1,7 @@
 <form
   class="input-container"
   #myForm="ngForm"
-  (ngSubmit)="addTodo(myForm)"
+  (ngSubmit)="addTodo(myForm, input)"
   novalidate
 >
   <input
@@ -10,6 +10,7 @@
     type="text"
     name="todoName"
     [(ngModel)]="title"
+    #input
     required
   />
   <input

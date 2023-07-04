@@ -11,12 +11,15 @@ export class InputComponent {
   constructor(private todosService: TodosService) {}
 
   title = '';
-  addTodo(form: NgForm) {
-    console.log(form);
+  addTodo(form: NgForm, input: HTMLInputElement) {
+    console.log(form.value.todoName.trim());
 
     if (form.value.todoName.trim() !== '') {
       this.title = '';
       this.todosService.setTodoToLocalStorage(form.value.todoName);
+    } else if (form.value.todoName.charAt(0) === " ") {
+      this.title = '';
+      input.focus();
     }
   }
 }
