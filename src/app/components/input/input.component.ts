@@ -17,8 +17,6 @@ export class InputComponent {
     if (form.value.todoName.trim() !== '') {
       this.title = '';
       this.todosService.setTodoToLocalStorage(form.value.todoName);
-    } else {
-      
     }
   }
 }
